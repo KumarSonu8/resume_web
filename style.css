@@ -102,6 +102,9 @@ section.profile .right ul.social li:nth-child(2){
 section.profile .right ul.social li:nth-child(3){
     background-color: rgba(17, 152, 186, 0.788);
 }
+section.profile .right ul.social li:nth-child(4){
+    background-color: rgba(60, 33, 130, 0.788);
+}
 
 .section_heading {
     color: white;
@@ -123,7 +126,6 @@ section {
 }
 
  /* About */
-
 section.about .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,6 +183,7 @@ section.about .content .right p span:nth-child(2){
     margin-right: 0;
     padding-right: 0;
 }
+
 
 section.about .content .right p span:nth-child(1)::after{
     content: ':';
