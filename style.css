@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #151a33e4;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: #5c74b40f;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.profile {
+    background: #060b1bc8;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin: 0;
+    margin-bottom: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%,0 80%);
+}
+
+.profile .left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+
+.profile .right {
+    flex: 1;
+}
+
+.profile .left h2 {
+    color: #7081b9;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.profile .left p {
+    color: #8997bd;
+    font-size: 14px;
+}
+
+.profile img {
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.profile .right li {
+    list-style: none;
+    color: #8997bd;
+    margin-bottom: 18px;
+}
+
+
+ section.profile .right ul.social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+section.profile .right ul.social li {
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .right li i {
+    color: white;
+    font-size: 15px;
+}
+
+section.profile .right ul.social li:nth-child(2){
+    background-color: rgb(0, 0, 0);
+}
+section.profile .right ul.social li:nth-child(3){
+    background-color: rgba(17, 152, 186, 0.788);
+}
+
+.section_heading {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+section {
+    padding: 3.5rem;
+    padding-top: 0;
+}
+
+.heading_hr {
+    height: 4px;
+    width: 78px;
+    border: 2px dotted rgb(120, 120, 223);
+    margin: 10px 0;
+}
+
+ /* About */
+
+section.about .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16rem;
+}
+
+section.about .content .left h2 {
+    color: #4d79f6;
+    font-size: 17px;
+    letter-spacing: 0.1px;
+    font-weight: 700px;
+    margin: 10px 0;
+}
+
+section.about .content .left p {
+    color: #8997bdc7;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    margin-bottom: 10px;
+}
+
+section.about .content .left button {
+    color: #6382d5;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 4px 8px;
+    background-color: #6985d11c;
+    border-radius: 5px;
+    /* outline: none; */
+    /* border: none; */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+section.about .content .right p {
+    color: #8997bd;
+    font-size: 14px;
+    /* font-weight: 500; */
+    letter-spacing: 0.1px;
+    margin-bottom: 1rem;
+}
+
+section.about .content .right p span:nth-child(1){
+    display: block;
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+    font-weight: 500px;
+    position: relative;
+}
+
+section.about .content .right p span:nth-child(2){
+    padding-left: 13px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+section.about .content .right p span:nth-child(1)::after{
+    content: ':';
+    position: absolute;
+    right: 0;
+}
+
+    /* Education & Skills */
+
+    
+    section.education hr{
+        width: 133px;
+}
+
+section.education .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8997bd;
+    font-size: 14px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+section.education .content .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-self: flex-start;
+}
+
+
+
+section.education .content .left .left_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.education .content .fa-solid {
+    font-size: 35px;
+    margin-bottom: 8px;
+    margin-left: 1.1rem;
+}
+
+.subheading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+section.education .content .left .heading {
+    margin: 1rem 0 0 10rem;
+}
+
+section.education .content .left .timeline_wrapper .item {
+    margin-bottom: 4rem;
+    letter-spacing: 0.1px;
+    position: relative;
+}
+
+section.education .content .left .timeline_wrapper .item p {
+    margin-bottom: 3px;
+}
+
+section.education .content .left .inner_left .timeline_wrapper {
+    border-left: 3.5px dotted rgba(82, 82, 206, 0.54);
+    
+}
+
+section.education .content .left .inner_left .timeline_wrapper .item {
+    margin-left: 25px;
+}
+section.education .content .left .inner_right .timeline_wrapper .item {
+    margin-right: 25px;
+    width: 16rem;
+}
+
+section.education .content .left .inner_left .timeline_wrapper .item::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    left: 0;
+    border: 2px solid rgba(178, 178, 223, 0.7);
+    background-color: rgb(79, 79, 201);
+    border-radius: 50%;
+    margin-left: -32px;
+}
+
+section.education .content .left .inner_left {
+    position: relative;
+    float: left;
+}
+
+section.education .content .left .innerright {
+    position: absolute;
+    float: right;
+}
+
+ /* Education & Skill -> Right  */
+
+ section.education .content .right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 1.8em;
+}
+
+
+ section.education .content .right .heading h5 {
+    margin-left: 18px;
+ }
+
+ section.education .content .right .heading {
+    margin-left: 6rem;
+    padding-left: 2rem;
+ }
+
+ section.education .content .right .right_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    row-gap: 6.4rem;
+    align-items: start;
+ }
+ 
+ /* Progress Bar */
+.container-progressBar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2em;
+    margin-top: 2.5rem;
+}
+
+.progress-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically and horizontally */
+    text-align: center;
+}
+
+.progress-card h5 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.progress-card .skill h5 {
+    color: #fff;
+    font-weight: 200;
+    font-size: medium;
+    padding-top: 1em;
+}
+
+.progress-circle {
+    position: relative;
+    background: transparent;
+    border: #1b1b1b 8px solid;
+    height: 8.2rem;
+    width: 8.2rem;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, #c12ae6 0%, #0c63dd 100%);
+    transition: bottom 1s;
+}
+
+.progress-content {
+    background: linear-gradient(0deg, #080808 0%, #111111 100%);
+    height: 7.6em;
+    width: 7.6em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.progress-content h5 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+    /* Projects */
+section.projects {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10rem; */
+}
+
+section.projects hr{
+    padding-right: 1rem;
+    width: 13.4rem;
+}
+
+section.projects .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    color: #8997bdc7;
+    height: 33rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+section.projects .content .left li b{
+    color: #6b87d6;
+}
+
+section.projects .content .left h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-left: 8.5rem;
+    color: #a8b0c3c7;
+}
+
+section.projects .content .right{
+    padding-left: 4rem;
+}
+
+section.projects .content .right h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    margin-left: 12.5rem;
+    color: #a8b0c3c7;
+}
+
+section.projects .content .right .content_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+section.projects .content .right a{
+    display: block;
+}
+
+section.projects .content .right a img{
+    height: 14rem;
+    width: 14rem;
+}
